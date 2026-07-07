@@ -21,8 +21,7 @@ bettabank-autotests/
 ├── tests/
 │   ├── conftest.py         # фикстуры (browser, page, тестовые данные)
 │   ├── test_smoke.py       # базовые smoke-проверки
-│   ├── test_auth.py        # авторизация: позитивные/негативные кейсы
-│   └── test_transfer.py    # переводы: функциональные и валидационные тесты
+│   └──test_auth.py        # авторизация: позитивные/негативные кейсы
 ├── .github/workflows/
 │   └── tests.yml           # CI pipeline
 ├── requirements.txt

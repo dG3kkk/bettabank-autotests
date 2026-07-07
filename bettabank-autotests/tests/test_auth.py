@@ -1,6 +1,5 @@
 """
 Тесты авторизации: успешный вход и навигация по ссылкам формы.
-Основаны на реальной разметке /sign-up.
 """
 import pytest
 from pages.login_page import LoginPage

@@ -16,6 +16,7 @@ def test_app_loads(page):
 @pytest.mark.smoke
 def test_sign_in_link_leads_to_login_form(page):
     """Клик по 'Войти' на главной должен вести на форму /sign-up"""
+
     landing = LandingPage(page)
     landing.open()
     landing.go_to_sign_up()

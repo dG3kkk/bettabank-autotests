@@ -23,6 +23,5 @@ def page(browser):
 
 @pytest.fixture
 def valid_user():
-    """Тестовый пользователь для позитивных сценариев.
-    Замените на реальные тестовые данные BettaBank."""
+    """Тестовый пользователь для позитивных сценариев."""
     return {"email": "test.user@example.com", "password": "TestPass123!"}

@@ -1,21 +1,17 @@
 """
 Page Object для страницы авторизации BettaBank.
-
-ВАЖНО: селекторы ниже — placeholder'ы (data-testid / примерные css).
-Перед запуском сверьте их с реальной вёрсткой через DevTools (Elements tab):
-правый клик по полю -> Inspect -> скопировать id/class/data-testid.
 """
 
 from playwright.sync_api import Page
 
 
 class LandingPage:
-    """Главная страница — подтверждено реальной разметкой сайта."""
+    """Главная страница."""
 
     def __init__(self, page: Page):
         self.page = page
         self.url = "https://test-mrn.astondevs.ru/"
-        self.sign_in_link = page.locator("a._link_dkhf7_48")  # "Войти" -> /sign-up
+        self.sign_in_link = page.locator("a._link_dkhf7_48")
 
     def open(self):
         self.page.goto(self.url)
@@ -25,7 +21,7 @@ class LandingPage:
 
 
 class LoginPage:
-    """Форма входа. Селекторы подтверждены реальной разметкой /sign-up."""
+    """Форма входа."""
 
     def __init__(self, page: Page):
         self.page = page
